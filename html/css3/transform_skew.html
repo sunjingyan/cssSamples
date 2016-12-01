@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>skew</title>
+<style> 
+div {
+	width:100px;
+	height:75px;
+	background-color:yellow;
+	border:1px solid black;
+}
+div#div2{
+	transform:skew(30deg,20deg);
+	-ms-transform:skew(30deg,20deg); /* IE 9 */
+	-moz-transform:skew(30deg,20deg); /* Firefox */
+	-webkit-transform:skew(30deg,20deg); /* Safari and Chrome */
+	-o-transform:skew(30deg,20deg); /* Opera */
+}
+</style>
+</head>
+<body>
+<p>倾斜转换： 通过 skew() 方法，元素翻转给定的角度，根据给定的水平线（X 轴）和垂直线（Y 轴）参数：</p>
+<p>值 skew(30deg,20deg) 围绕 X 轴把元素翻转 30 度，围绕 Y 轴翻转 20 度。</p>
+<p>skewX(angle):定义 2D 倾斜转换，沿着 X 轴</p>
+<p>skewY(angle):定义 2D 倾斜转换，沿着 Y 轴</p>
+<div>你好。这是一个 div 元素。</div>
+<div id="div2">你好。这是一个 div 元素。</div>
+</body>
+</html>
